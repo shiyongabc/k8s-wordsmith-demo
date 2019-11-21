@@ -23,6 +23,7 @@ spec:
   selector:
     matchLabels:
       app: words-db
+  replicas: 2
   template:
     metadata:
       labels:
@@ -60,7 +61,7 @@ spec:
   selector:
     matchLabels:
       app: words-api
-  replicas: 5
+  replicas: 2
   template:
     metadata:
       labels:
@@ -98,6 +99,7 @@ spec:
   selector:
     matchLabels:
       app: words-web
+  replicas: 2
   template:
     metadata:
       labels:
